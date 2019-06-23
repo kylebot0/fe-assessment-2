@@ -51,6 +51,8 @@ div[role='group'] {
 }
 
 div[role='group-gender'] {
+    padding: 0.5em;
+    border: 1px solid #e08b3e;
     margin-top: 3em;
     display: flex;
     flex-direction: column;
@@ -65,9 +67,14 @@ main form input {
     margin-bottom: 2em;
     transition: all 200ms;
 }
-
+.gender {
+    width: 30%;
+}
+main form input:focus {
+    width: 75%;
+}
 main form input:invalid {
-    border: 1px solid #fff;
+    border: 1px solid grey;
 }
 
 main form input:valid {

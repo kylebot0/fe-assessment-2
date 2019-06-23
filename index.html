@@ -18,11 +18,11 @@
             <fieldset class="tab current-tab">
                 <div role="group">
                     <label for="firstName"> First name:</label>
-                    <input type="text" name="firstName" placeholder="Kyle">
+                    <input type="text" name="firstName" placeholder="Kyle" required>
                     <label for="lastName"> Last name:</label>
-                    <input type="text" name="lastName" placeholder="Bot">
+                    <input type="text" name="lastName" placeholder="Bot" required>
                     <label for="age"> Age:</label>
-                    <input type="number" name="age" min="16" max="80" step="1" value="16" size="16">
+                    <input type="number" class="gender" name="age" min="16" max="80" step="1" value="16" size="16" required>
                     <div>
                         <button type="button" class="next first">Next</button>
                     </div>
@@ -46,9 +46,10 @@
             <fieldset class="tab current-tab">
                 <div role="group">
                     <label for="phone"> Phone number:</label>
-                    <input type="text" id="phone" placeholder="06 13254769">
+                    <input type="tel" pattern="[0-6]{2}-[0-9]{8}" id="phone" placeholder="06 13254769"
+                        required>
                     <label for="place"> Residence:</label>
-                    <input type="text" id="place" placeholder="Amsterdam">
+                    <input type="text" id="place" placeholder="Amsterdam" required>
                     <div>
                         <button type="button" class="prev">Previous</button>
                         <button type="submit" class="submit">Submit</button>
